@@ -2,52 +2,51 @@
   --violet: rgb(103, 75, 175);
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Open Sans', sans-serif;
-}
-
-.wrapper {
   background-color: var(--violet);
   background-image: url(../images/bg-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-}
-
-.main {
-  margin: auto;
-  height: 800px;
-  width: 85vw;
   text-align: center;
   color: #fff;
+  font-size: 4.26vw;
 }
 
-.main__logo--svg {
-  margin-top: 1.25rem;
-  margin-left: -8.45rem;
-  width: 54.2%;
+.wrapper {
+  margin: 3.9vh auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 83vw;
 }
 
-.main__illustration--svg {
-  padding-top: 2.3rem;
-  padding-left: 0.1rem;
-  width: 94.9%;
-  height: 100%;
+.main__logo { align-self: start; width: 56.5%; }
+
+.main__logo--svg { width: 100%; height: 100%; }
+
+.main__illustration {
+  margin-top: 2.9rem;
+  width: 97%;
 }
+
+.main__illustration--svg { width: 100%; height: 100%; }
 
 .main__title {
-  margin-top: 3.5rem;
-  font-size: 1.54rem;
-  font-weight: 700;
+  margin-top: 3.55rem;
   font-family: var(--font-heading);
-  line-height: 1.47;
+  font-size: 1.51rem;
+  font-weight: 500;
+  line-height: 1.55;
 }
 
 .main__paragraph {
-  margin: 0.8rem auto 1.5rem auto;
+  margin-top: 0.9rem;
+  width: 98%;
   font-family: var(--font-body);
-  width: 95%;
   line-height: 1.5;
 }
 
 .main__button {
+  margin-top: 1.7rem;
   padding: 0.7rem 4.8rem;
   font-family: var(--font-heading);
   font-size: 0.73rem;
@@ -55,9 +54,9 @@
   border-style: none;
   background-color: #fff;
   color: var(--violet);
-  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,.35);
+  -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,.35);
+  box-shadow: 4px 4px 10px 0px rgba(0,0,0,.35);
 }
 
 .main__social {
@@ -71,12 +70,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25px;
-  height: 25px;
-  border: 1px solid #fff;
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: 0.85rem;
+  border: calc( 1rem / 14 ) solid #fff;
   border-radius: 100%;
-}
-
-.fab {
-  font-size: 0.8rem;
 }

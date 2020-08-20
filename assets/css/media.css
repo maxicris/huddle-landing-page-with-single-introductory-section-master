@@ -2,87 +2,79 @@
   --violet: rgb(103, 75, 175);
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Open Sans', sans-serif;
-}
-
-.wrapper {
   background-color: var(--violet);
   background-image: url(../images/bg-desktop.svg);
   background-repeat: no-repeat;
-}
-
-.main {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 800px;
-  width: 90vw;
   color: #fff;
+  font-size: 4.26vw;
 }
 
-.main__logo--svg {
-  margin-top: 3.1em;
-  margin-left: -0.2rem;
-  width: 40.4%;
-  height: 100%;
+.wrapper {
+  margin: 6vh auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  width: 90vw;
 }
 
-.main__illustration--svg {
-  padding-top: 4.6rem;
-  padding-left: .1rem;
-  height: 100%;
+.main__logo { width: 100%; }
+
+.main__logo--svg { width: 22%; height: 100%; }
+
+.main__illustration {
+  margin-top: .95rem;
+  margin-right: 0.9rem;
+  width: 54.7%;
 }
+
+.main__illustration--svg { width: 100%; height: 100%; }
 
 .main__title {
-  margin-top: 14.8rem;
-  margin-left: 3.25rem;
+  margin-top: 1.75rem;
   width: 35%;
-  font-size: 2.48rem;
-  font-weight: 600;
+  height: 10%;
   font-family: var(--font-heading);
-  line-height: 1.54;
+  font-size: .65rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .main__paragraph {
-  margin: 1.2rem auto 1.5rem 3.25rem;
-  width: 40%;
+  /* margin-top: 0.9rem; */
+  width: 25.3%;
   font-family: var(--font-body);
-  font-size: 1.125rem;
+  font-size: .3rem;
   line-height: 1.5;
 }
 
 .main__button {
-  margin-left: 3.2rem;
-  padding: .9rem 0rem;
-  width: 15.5%;
+  /* margin-top: 1.7rem; */
+  padding: .5rem .8rem;
   font-family: var(--font-heading);
-  font-size: 1.08rem;
+  font-size: 0.73rem;
   border-radius: 2rem;
   border-style: none;
   background-color: #fff;
   color: var(--violet);
-  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,.35);
+  -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,.35);
+  box-shadow: 4px 4px 10px 0px rgba(0,0,0,.35);
 }
 
 .main__social {
-  margin: 11.35rem 0rem 0rem 25.6rem;
+  /* margin: 4rem auto auto auto; */
   display: flex;
   justify-content: space-evenly;
-  width: 14%;
+  width: 40%;
 }
 
 .main__social--icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 38px;
-  height: 38px;
-  border: 1px solid #fff;
+  width: .6rem;
+  height: .6rem;
+  font-size: 0.35rem;
+  border: calc(1rem / 25) solid #fff;
   border-radius: 100%;
-}
-
-.fab {
-  font-size: 1.1rem;
 }
